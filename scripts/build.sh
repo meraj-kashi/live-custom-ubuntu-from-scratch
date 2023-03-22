@@ -156,8 +156,6 @@ function build_iso() {
 
 search --set=root --file /ubuntu
 
-insmod all_video
-
 set default="0"
 set timeout=30
 
@@ -167,7 +165,7 @@ menuentry "${GRUB_LIVEBOOT_LABEL}" {
 }
 
 menuentry "${GRUB_INSTALL_LABEL}" {
-   linux /casper/vmlinuz boot=casper only-ubiquity quiet splash ---
+   linux /casper/vmlinuz boot=casper quiet splash ---
    initrd /casper/initrd
 }
 
