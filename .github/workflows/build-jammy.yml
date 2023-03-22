@@ -2,7 +2,7 @@ name: build-jammy
 
 on:
   push:
-    branches: [ master,sporveien ]
+    branches: [ master,spoveien ]
   workflow_dispatch:
 
 jobs:
